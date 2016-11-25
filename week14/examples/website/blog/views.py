@@ -3,6 +3,10 @@ from .models import Post, Category
 from .forms import PostForm
 from django.utils.timezone import now
 from django.contrib.auth.decorators import login_required
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/maxchv/master
 
 def get_categories():
     all_categories = Category.objects.all()
@@ -50,6 +54,10 @@ def search(request):
     context.update(get_categories())
     return render(request, "blog/index.html", context)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/maxchv/master
 @login_required
 def create(request):
     if request.method == 'POST':

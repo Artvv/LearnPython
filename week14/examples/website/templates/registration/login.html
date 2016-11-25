@@ -5,8 +5,15 @@
     <form action="{% url 'blog_login' %}" method="post">
         {% csrf_token %}
         {{ form|crispy }}
+<<<<<<< HEAD
         <input type="hidden" name="next" value="{{ next }}"/>
         <input type="submit" class="btn btn-default"/>
     </form>
 {% endblock %}
 
+=======
+        <input type="hidden" name="next" value="{{ next }}" />
+        <input type="submit" class="btn btn-default"/>
+    </form>
+{% endblock %}
+>>>>>>> refs/remotes/maxchv/master
